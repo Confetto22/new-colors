@@ -1,0 +1,93 @@
+header{
+    /* background-color: rgba(0, 0, 0, 0.541); */
+    color: #fff;
+    /* padding: .6rem 2rem;
+    padding-top: 0; */
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem ;
+    background-color: rgba(0, 0, 0, 0.541);
+    
+}
+.contactBt{
+    background-color: #df2601;
+    border: none;
+    padding: .6rem 1rem;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    transition:.3s cubic-bezier(0.65, 0.05, 0.36, 1);;
+}
+.contactBt i{
+    font-size: 1.2rem;
+}
+.contactBt:hover{
+    background-color: #013a28;
+    color: gold;
+}
+.headerDivide{
+    background-color: gold;
+    border: none;
+    height: 2px;
+}
+.navbar{
+    padding: 1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #013a28;
+    /* background-color: rebeccapurple; */
+    /* background-color: black; */
+}
+.churchLogo{
+    width: 180px;
+    /* background-color: red; */
+    /* height: 70px; */
+    /* object-fit: cover; */
+}
+.menu_list{
+    /* background-color: red; */
+    padding: .6rem 1.5rem;
+    display: none;
+   
+}
+.menu_list a{
+    /* background-color: rebeccapurple; */
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+.menu_list a:hover{
+    border-bottom: 2px solid #df2601;
+}
+
+
+
+.menuBt{
+    font-size: 2.4rem;
+    color: black;
+}
+
+
+
+
+@media only screen and (min-width:768px){
+    .menu_list{
+        display: flex;
+    align-items: center;
+    gap: 4rem;
+    }
+    .menu_item{
+    list-style-type: none;
+    font-size: 1.2rem;
+    color: #791501;
+    }
+}

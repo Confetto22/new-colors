@@ -1,0 +1,97 @@
+.testimonials{
+    padding: 2rem 1rem;
+}
+
+.testimonials_intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimonials_intro .subheading{
+    text-align: center;
+}
+.testimonials_intro .mainheading{
+    text-align: center;
+}
+
+.testimonial_introText{
+    font-family: "DM Sans",
+            sans-serif;
+        font-weight: 400;
+        line-height: 1.8rem;
+        font-size: 1.1rem;
+        text-align: center;
+}
+.view_more{
+    background-color: #df2601;
+        font-family: "DM Sans", sans-serif;
+    border: none;
+    padding: .7rem 2rem;
+    color: #fff;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    margin-top: 1.7rem;
+
+}
+.card_testimonial{
+    background-color: #f5beb33a;
+    padding: 2rem 1rem;
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.quote{
+    width: 40px;
+    transform: rotate(180deg);
+}
+.testimonial_heading{
+    font-family:"Forum",
+        sans-serif ;
+        font-weight: 1000;
+        font-size: 1.4rem;
+}
+.actual_testimonial{
+    font-weight: 300;
+}
+.person{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.personPic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.person_name{
+    font-weight: 600;
+}
+.all_testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+
+@media only screen and (min-width:768px){
+    .testimonials_intro{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .testimonial_introText{
+        text-align: left;
+    }
+    .view_more{
+        margin: initial;
+        margin-top: 2.6rem;
+    }
+    .all_testimonials{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

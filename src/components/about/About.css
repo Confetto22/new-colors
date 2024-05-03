@@ -1,0 +1,137 @@
+.about{
+    padding: 5rem 1rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    /* background-color: #58583b57; */
+}
+.about_subheading{
+    color: #df2601;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 1000;
+        text-transform: uppercase;
+        /* font-weight: bolder; */
+        letter-spacing: 2px;
+}
+.about_heading{
+    color: #b67c00;
+        font-size: 2rem;
+        font-family: "Forum", sans-serif;
+        font-weight: 500;
+        line-height: 2.4rem;
+        margin: 1.4rem 0;
+}
+
+.about_intro{
+font-family: "DM Sans",
+        sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.allcheck_cards{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+}
+.check_card{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin: 1.4rem 0;
+}
+#checkIcon{
+    font-size: 1.2rem;
+    color: #d39103;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* padding: .4rem; */
+    display: flex;
+    /* text-align: center;   */
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #004225;
+    /* background-color: #fcd6cc; */
+}
+.check_text{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+}
+.learn_more{
+    background-color: #df2601;
+    color: #fff;
+    padding: .9rem 2rem;
+    border: none;
+}
+.about_image_card{
+    /* background-color: rebeccapurple; */
+    position: relative;
+}
+.childplay{
+    width: 90%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.members_stats{
+    background-color: #00000083;
+    /* background-color: red; */
+    padding: 1rem;
+    /* height: 5rem; */
+    width: 10rem;
+    position: absolute;
+    bottom: -10px;
+    right:14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    gap: .5rem;
+    
+}
+.number{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.number_detail{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+}
+.grin{
+    color: #fff;
+    background-color: #df2601;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width:768px){
+    .about{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .about_image_card{
+        /* background-color: rebeccapurple; */
+        width: 100%;
+    }
+    .childplay{
+        width: 90%;
+        aspect-ratio: 9/16;
+    }
+    .about_text{
+        width: 100%;
+    }
+    .members_stats{
+      /* display: flex; */
+      flex-direction: row;
+      padding: 1rem 2rem;
+    }
+}
