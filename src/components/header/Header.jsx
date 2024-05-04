@@ -1,17 +1,16 @@
 import NavTop from "./NavTop";
 import "./Nav.css";
 import churchLogo from "../../assets/images/homlogonew.png";
+
 // import { useState } from "react";
 
 const Header = () => {
   // const [hovered, setIsHovered] = useState(false);
-
   function dropMenu() {
-    const item = document.getElementById("expandable");
+    const MenuWindow = document.querySelector(".menu_window");
 
-    item.classList.add("dropdownAnimate");
-
-    // hovered ? item.classList.add("dropdownAnimate") : null;
+    MenuWindow.classList.toggle("menu_slide");
+    MenuWindow.style.backgroundColor = "#d39103";
   }
 
   return (
@@ -28,13 +27,7 @@ const Header = () => {
           </a>
           <a href="#">
             {" "}
-            <li className="menu_item" id="expandable" onMouseOver={dropMenu}>
-              About
-              <div className="dropdown">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis, corporis.
-              </div>
-            </li>
+            <li className="menu_item">About</li>
           </a>
           <a href="#">
             {" "}
@@ -42,7 +35,7 @@ const Header = () => {
           </a>
         </ul>
 
-        <i className="bx bx-menu-alt-right menuBt"></i>
+        <i className="bx bx-menu-alt-right menuBt" onClick={dropMenu}></i>
       </nav>
     </header>
   );

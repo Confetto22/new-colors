@@ -8,20 +8,23 @@ const reachDetails = [
   {
     id: 1,
     icon: "fa-solid fa-church cardIcon",
-    reachHeading: "Visit Our Church",
-    reachInfo: "323 Valley Lane, Austin",
+    reachHeading: "Mystery Temple",
+    reachInfo: "Tatop Weija Accra, Ghana.",
+    link: "#",
   },
   {
     id: 2,
     icon: "fa-solid fa-phone cardIcon",
     reachHeading: "Call Us Now",
-    reachInfo: "+1 (234) 567 890 00",
+    reachInfo: "+233(0)-597-127-775",
+    link: "#",
   },
   {
     id: 3,
     icon: "fa-solid fa-envelope cardIcon",
     reachHeading: "Send a Message",
-    reachInfo: "agrace.church@gmail.com",
+    reachInfo: "homchapel@gmail.com",
+    link: "mailto:homchapel@gmail.com",
   },
 ];
 
@@ -31,6 +34,7 @@ function createReachDetail(singleReach) {
       icon={singleReach.icon}
       reachHead={singleReach.reachHeading}
       reachInfo={singleReach.reachInfo}
+      link={singleReach.link}
     />
   );
 }
@@ -42,7 +46,7 @@ const Hero = () => {
         <div className="hero_text">
           <SecHeading
             subheading="welcome to hom chapel"
-            mainheading="Embracing All with Redeeming Love"
+            mainheading="Home For The Lost And Broken"
           />
 
           <p className="hero_info">

@@ -1,0 +1,14 @@
+.menu_window{
+    background-color: #013a28;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: -200%;
+    transition: .7s cubic-bezier(0.39, 0.575, 0.565, 1);
+    z-index: 3;
+}
+
+
+.menu_window.menu_slide{
+    top: 0;
+}

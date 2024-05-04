@@ -13,7 +13,6 @@ footer{
 }
 #footer_logo{
     width: 70%;
-    /* background-color: rebeccapurple; */
 }
 .intro_text{
     text-align: center;
@@ -36,6 +35,7 @@ footer{
     border-radius: 50%;
     font-size: 1.1rem;
     transition: .3s ease-in-out;
+    cursor: pointer;
 }
 .socials i:hover{
     background-color: #d39103;
@@ -69,7 +69,7 @@ footer{
     transition: .2s ease-in-out;
 }
 .footer_contact a:hover, .footer_address a:hover{
-    color: #df2601;
+    color: #d39103;
 }
 footer hr{
     margin: 2rem 0;
@@ -88,5 +88,13 @@ footer hr{
         align-items: center;
         justify-content: center;
         gap: 7rem;
+    }
+    #footer_logo{
+    width: 50%;
+    }
+}
+@media only screen and (min-width:900px){
+    #footer_logo{
+        width: 30%;
     }
 }

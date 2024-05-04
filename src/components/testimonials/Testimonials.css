@@ -36,12 +36,13 @@
 
 }
 .card_testimonial{
-    background-color: #f5beb33a;
+    background-color: #ec3fb8f8;
     padding: 2rem 1rem;
     font-family: "DM Sans", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border-radius: .4rem;
 }
 .quote{
     width: 40px;
@@ -93,5 +94,14 @@
     .all_testimonials{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .testimonials_intro .subheading{
+        text-align: left;
+    }
+}
+@media only screen and (min-width:900px){
+    .all_testimonials{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
